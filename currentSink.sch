@@ -134,39 +134,6 @@ F 3 "" H 9650 1950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCP4922-E/SL U?
-U 1 1 5520CE1D
-P 2650 2850
-F 0 "U?" H 2800 3250 40  0000 L BNN
-F 1 "MCP4922-E/SL" H 2800 3200 40  0000 L BNN
-F 2 "SO14" H 2650 2850 30  0000 C CIN
-F 3 "" H 2650 2850 60  0000 C CNN
-	1    2650 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5350 3000 3200 3000
-Wire Wire Line
-	5350 2950 5350 3000
-Connection ~ 7700 4650
-Wire Wire Line
-	9350 4650 7700 4650
-Wire Wire Line
-	5750 3500 5750 3600
-Connection ~ 7700 3850
-Wire Wire Line
-	5350 3850 7700 3850
-Wire Wire Line
-	5350 3200 5350 3850
-Wire Wire Line
-	6350 3100 6600 3100
-Wire Wire Line
-	7100 3100 7400 3100
-Wire Wire Line
-	7700 3300 7700 4050
-Wire Wire Line
-	7700 4550 7700 4700
-$Comp
 L TC1016 U?
 U 1 1 5520CF99
 P 6800 2000
@@ -177,13 +144,6 @@ F 3 "" H 6800 2000 60  0000 C CNN
 	1    6800 2000
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	2550 1950 6400 1950
-Wire Wire Line
-	5750 1950 5750 2700
-Wire Wire Line
-	2550 2400 2550 1950
-Connection ~ 5750 1950
 $Comp
 L GND #PWR?
 U 1 1 5520D273
@@ -195,13 +155,6 @@ F 3 "" H 6800 2550 60  0000 C CNN
 	1    6800 2550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6800 2550 6800 2250
-Wire Wire Line
-	7200 1950 9450 1950
-Wire Wire Line
-	7700 2900 7700 1950
-Connection ~ 7700 1950
 $Comp
 L C C?
 U 1 1 5520D778
@@ -224,17 +177,6 @@ F 3 "" H 6200 2350 60  0000 C CNN
 	1    6200 2350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6200 2150 6200 1950
-Connection ~ 6200 1950
-Wire Wire Line
-	6200 2550 6800 2550
-Connection ~ 7400 1950
-Wire Wire Line
-	7400 2100 7400 1950
-Wire Wire Line
-	7400 2500 6800 2500
-Connection ~ 6800 2500
 $Comp
 L GND #PWR?
 U 1 1 5520DDF9
@@ -246,6 +188,98 @@ F 3 "" H 2550 3550 60  0000 C CNN
 	1    2550 3550
 	1    0    0    -1  
 $EndComp
+$Comp
+L MCP4802-E/SN U?
+U 1 1 5520E852
+P 2650 2850
+F 0 "U?" H 2650 3200 40  0000 L BNN
+F 1 "MCP4802-E/SN" H 2650 3150 40  0000 L BNN
+F 2 "SO8" H 2650 2850 30  0000 C CIN
+F 3 "" H 2650 2850 60  0000 C CNN
+	1    2650 2850
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	2550 3300 2550 3550
+	2550 3250 2550 3550
+Wire Wire Line
+	3050 3000 5350 3000
+Wire Wire Line
+	2550 2450 2550 1950
+Connection ~ 6800 2500
+Wire Wire Line
+	7400 2500 6800 2500
+Wire Wire Line
+	7400 2100 7400 1950
+Connection ~ 7400 1950
+Wire Wire Line
+	6800 2550 6200 2550
+Connection ~ 6200 1950
+Wire Wire Line
+	6200 2150 6200 1950
+Connection ~ 7700 1950
+Wire Wire Line
+	7700 2900 7700 1950
+Wire Wire Line
+	7200 1950 9450 1950
+Wire Wire Line
+	6800 2250 6800 2550
+Connection ~ 5750 1950
+Wire Wire Line
+	5750 1950 5750 2700
+Wire Wire Line
+	2550 1950 6400 1950
+Wire Wire Line
+	7700 4550 7700 4700
+Wire Wire Line
+	7700 3300 7700 4050
+Wire Wire Line
+	7100 3100 7400 3100
+Wire Wire Line
+	6350 3100 6600 3100
+Wire Wire Line
+	5350 3200 5350 3850
+Wire Wire Line
+	5350 3850 7700 3850
+Connection ~ 7700 3850
+Wire Wire Line
+	5750 3500 5750 3600
+Wire Wire Line
+	9350 4650 7700 4650
+Connection ~ 7700 4650
+Connection ~ 2550 3400
+$Comp
+L CONN_01X05 P?
+U 1 1 5520F4FB
+P 1300 4300
+F 0 "P?" H 1300 4600 50  0000 C CNN
+F 1 "CONN_01X05" V 1400 4300 50  0000 C CNN
+F 2 "" H 1300 4300 60  0000 C CNN
+F 3 "" H 1300 4300 60  0000 C CNN
+	1    1300 4300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2100 3000 2050 3000
+Wire Wire Line
+	2050 3000 2050 3400
+Wire Wire Line
+	2050 3400 2550 3400
+Wire Wire Line
+	2100 2900 2000 2900
+Wire Wire Line
+	2000 2900 2000 4500
+Wire Wire Line
+	2000 4500 1500 4500
+Wire Wire Line
+	2100 2800 1900 2800
+Wire Wire Line
+	1900 2800 1900 4400
+Wire Wire Line
+	1900 4400 1500 4400
+Wire Wire Line
+	2100 2700 1800 2700
+Wire Wire Line
+	1800 2700 1800 4300
+Wire Wire Line
+	1800 4300 1500 4300
 $EndSCHEMATC
