@@ -1,0 +1,241 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:currentSink
+LIBS:currentSink-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR?
+U 1 1 5521A09C
+P 5100 4750
+F 0 "#PWR?" H 5100 4500 60  0001 C CNN
+F 1 "GND" H 5100 4600 60  0000 C CNN
+F 2 "" H 5100 4750 60  0000 C CNN
+F 3 "" H 5100 4750 60  0000 C CNN
+	1    5100 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5521A0A9
+P 4300 3850
+F 0 "#PWR?" H 4300 3600 60  0001 C CNN
+F 1 "GND" H 4300 3700 60  0000 C CNN
+F 2 "" H 4300 3850 60  0000 C CNN
+F 3 "" H 4300 3850 60  0000 C CNN
+	1    4300 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5521A0D3
+P 5100 4750
+F 0 "#PWR?" H 5100 4500 60  0001 C CNN
+F 1 "GND" H 5100 4600 60  0000 C CNN
+F 2 "" H 5100 4750 60  0000 C CNN
+F 3 "" H 5100 4750 60  0000 C CNN
+	1    5100 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5521A0E0
+P 4300 3850
+F 0 "#PWR?" H 4300 3600 60  0001 C CNN
+F 1 "GND" H 4300 3700 60  0000 C CNN
+F 2 "" H 4300 3850 60  0000 C CNN
+F 3 "" H 4300 3850 60  0000 C CNN
+	1    4300 3850
+	1    0    0    -1  
+$EndComp
+Connection ~ 7900 5050
+Wire Wire Line
+	4700 5050 7900 5050
+Wire Wire Line
+	4700 4350 4700 5050
+Wire Wire Line
+	4300 3750 4300 3850
+Wire Wire Line
+	5100 4650 5100 4750
+Wire Wire Line
+	6850 4250 7600 4250
+Wire Wire Line
+	7900 4450 7900 5200
+$Comp
+L GND #PWR?
+U 1 1 5521A118
+P 5100 4750
+F 0 "#PWR?" H 5100 4500 60  0001 C CNN
+F 1 "GND" H 5100 4600 60  0000 C CNN
+F 2 "" H 5100 4750 60  0000 C CNN
+F 3 "" H 5100 4750 60  0000 C CNN
+	1    5100 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5521A125
+P 4300 3850
+F 0 "#PWR?" H 4300 3600 60  0001 C CNN
+F 1 "GND" H 4300 3700 60  0000 C CNN
+F 2 "" H 4300 3850 60  0000 C CNN
+F 3 "" H 4300 3850 60  0000 C CNN
+	1    4300 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L LMV358 U?
+U 1 1 5521A12B
+P 5200 4250
+F 0 "U?" H 5150 4450 60  0000 L CNN
+F 1 "LMV358" H 5150 4000 60  0000 L CNN
+F 2 "" H 5200 4250 60  0000 C CNN
+F 3 "" H 5200 4250 60  0000 C CNN
+	1    5200 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5521A139
+P 7900 5450
+F 0 "R?" V 7980 5450 50  0000 C CNN
+F 1 ".1" V 7907 5451 50  0000 C CNN
+F 2 "" V 7830 5450 30  0000 C CNN
+F 3 "" H 7900 5450 30  0000 C CNN
+F 4 "AC01000001007JA100" V 7900 5450 60  0001 C CNN "MPN"
+	1    7900 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MOSFET_N Q?
+U 1 1 5521A141
+P 7800 4250
+F 0 "Q?" H 7810 4420 50  0000 R CNN
+F 1 "BUK9575" H 7750 4100 50  0000 R CNN
+F 2 "" H 7800 4250 60  0000 C CNN
+F 3 "" H 7800 4250 60  0000 C CNN
+F 4 "BUK9575-100A,127" H 7800 4250 60  0001 C CNN "MPN"
+	1    7800 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5521A148
+P 6600 4250
+F 0 "R?" V 6680 4250 50  0000 C CNN
+F 1 "R" V 6607 4251 50  0000 C CNN
+F 2 "" V 6530 4250 30  0000 C CNN
+F 3 "" H 6600 4250 30  0000 C CNN
+	1    6600 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5521A14F
+P 5100 4750
+F 0 "#PWR?" H 5100 4500 60  0001 C CNN
+F 1 "GND" H 5100 4600 60  0000 C CNN
+F 2 "" H 5100 4750 60  0000 C CNN
+F 3 "" H 5100 4750 60  0000 C CNN
+	1    5100 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5521A155
+P 4300 3550
+F 0 "C?" H 4350 3650 50  0000 L CNN
+F 1 "C" H 4350 3450 50  0000 L CNN
+F 2 "" H 4338 3400 30  0000 C CNN
+F 3 "" H 4300 3550 60  0000 C CNN
+	1    4300 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5521A15C
+P 4300 3850
+F 0 "#PWR?" H 4300 3600 60  0001 C CNN
+F 1 "GND" H 4300 3700 60  0000 C CNN
+F 2 "" H 4300 3850 60  0000 C CNN
+F 3 "" H 4300 3850 60  0000 C CNN
+	1    4300 3850
+	1    0    0    -1  
+$EndComp
+Text GLabel 2800 2800 0    60   Input ~ 0
+2.7V
+Wire Wire Line
+	5100 3850 5100 3350
+Wire Wire Line
+	5100 3350 3350 3350
+Wire Wire Line
+	3350 3350 3350 2800
+Wire Wire Line
+	3350 2800 2800 2800
+Text HLabel 2950 4150 0    60   Input ~ 0
+DAC_Vb
+Wire Wire Line
+	2950 4150 4700 4150
+Wire Wire Line
+	5700 4250 6350 4250
+Wire Wire Line
+	7900 4050 7900 2000
+Wire Wire Line
+	7900 2000 8700 2000
+Wire Wire Line
+	7150 4250 7150 1700
+Wire Wire Line
+	7150 1700 8700 1700
+Connection ~ 7150 4250
+Text HLabel 8700 1700 2    60   Input ~ 0
+FET_Gate
+Text HLabel 8700 2000 2    60   Input ~ 0
+Current_Sink+
+Text HLabel 8700 5800 2    60   Input ~ 0
+Current_Sink-
+Wire Wire Line
+	7900 5700 7900 5800
+Wire Wire Line
+	7900 5800 8700 5800
+$EndSCHEMATC
