@@ -94,7 +94,7 @@ Wire Wire Line
 Wire Wire Line
 	4100 4400 4100 5300
 Wire Wire Line
-	3700 3800 3700 3900
+	3700 3750 3700 3900
 Wire Wire Line
 	4500 4700 4500 4800
 $Comp
@@ -211,7 +211,7 @@ F 3 "" H 7300 5750 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7300 5150 7300 5500
+	7300 5050 7300 5600
 Connection ~ 7300 5300
 Text HLabel 7950 4300 2    60   Output ~ 0
 Vcontrol
@@ -220,13 +220,13 @@ Wire Wire Line
 Text HLabel 7950 4500 2    60   Input ~ 0
 Current_Sink+
 Wire Wire Line
-	7300 4650 7300 4500
+	7300 4500 7300 4750
 Wire Wire Line
 	7300 4500 7950 4500
 Text HLabel 8000 6250 2    60   Input ~ 0
 Current_Sink-
 Wire Wire Line
-	7300 6000 7300 6250
+	7300 5900 7300 6250
 Text HLabel 2350 4200 0    60   Input ~ 0
 DAC_Va
 Text HLabel 8000 5300 2    60   Output ~ 0
@@ -257,8 +257,11 @@ $EndComp
 Wire Wire Line
 	7300 6250 8000 6250
 Wire Wire Line
-	7700 5900 7700 5950
+	7700 5850 7700 5950
 Wire Wire Line
-	7700 5500 7700 5300
+	7700 5300 7700 5550
 Connection ~ 7700 5300
+Wire Wire Line
+	3700 3450 3700 3400
+Connection ~ 3700 3400
 $EndSCHEMATC

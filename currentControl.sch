@@ -95,13 +95,13 @@ Wire Wire Line
 Wire Wire Line
 	4700 4350 4700 5050
 Wire Wire Line
-	4300 3750 4300 3850
+	4300 3700 4300 3850
 Wire Wire Line
 	5100 4650 5100 4750
 Wire Wire Line
-	6850 4250 7600 4250
+	6750 4250 7600 4250
 Wire Wire Line
-	7900 4450 7900 5200
+	7900 4450 7900 5300
 $Comp
 L GND #PWR207
 U 1 1 5521A118
@@ -218,7 +218,7 @@ DAC_Vb
 Wire Wire Line
 	2950 4150 4700 4150
 Wire Wire Line
-	5700 4250 6350 4250
+	5700 4250 6450 4250
 Wire Wire Line
 	7900 4050 7900 2000
 Wire Wire Line
@@ -235,7 +235,10 @@ Current_Sink+
 Text HLabel 8700 5800 2    60   Input ~ 0
 Current_Sink-
 Wire Wire Line
-	7900 5700 7900 5800
+	7900 5600 7900 5800
 Wire Wire Line
 	7900 5800 8700 5800
+Wire Wire Line
+	4300 3400 4300 3350
+Connection ~ 4300 3350
 $EndSCHEMATC

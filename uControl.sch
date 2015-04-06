@@ -122,7 +122,7 @@ Connection ~ 5550 4900
 Wire Wire Line
 	5050 4900 5550 4900
 Wire Wire Line
-	5950 3600 6050 3600
+	5900 3600 6050 3600
 Wire Wire Line
 	6050 4500 7550 4500
 Text HLabel 7550 4500 2    60   Output ~ 0
@@ -180,5 +180,11 @@ F 3 "" H 6050 3100 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5950 3100 6050 3100
+	5900 3100 6050 3100
+Wire Wire Line
+	5600 3600 5550 3600
+Connection ~ 5550 3600
+Wire Wire Line
+	5600 3100 5550 3100
+Connection ~ 5550 3100
 $EndSCHEMATC
