@@ -1,4 +1,4 @@
-update=Sunday, 05 April 2015 08:04:19 pm
+update=Monday, 06 April 2015 10:56:02 am
 version=1
 last_client=kicad
 [pcbnew]
@@ -58,8 +58,6 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=currentSink
-[general]
-version=1
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -73,3 +71,5 @@ RptD_X=0
 RptD_Y=100
 RptLab=1
 LabSize=60
+[general]
+version=1
