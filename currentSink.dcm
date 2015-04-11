@@ -1,0 +1,81 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ACS711
+D Linear Regulator +5V
+K POWER REGUL
+F regulator\lm78xx.pdf
+$ENDCMP
+#
+$CMP LM2931
+D MC78L05ACD, Positive 100mA 30V Linear Regulator, Fixed Output 5V, SO-8
+K Voltage Regulator 100mA Positive
+F http://www.fairchildsemi.com/ds/LM/LM78L05A.pdf
+$ENDCMP
+#
+$CMP LM2931D-R
+D Linear Regulator +5V
+K POWER REGUL
+F regulator\lm78xx.pdf
+$ENDCMP
+#
+$CMP LM2931xxx
+D MC78L05ACD, Positive 100mA 30V Linear Regulator, Fixed Output 5V, SO-8
+K Voltage Regulator 100mA Positive
+F http://www.fairchildsemi.com/ds/LM/LM78L05A.pdf
+$ENDCMP
+#
+$CMP LMV358
+D Dual Op amp (low power)
+K ampliop
+F ns/lm158.pdf
+$ENDCMP
+#
+$CMP MC78L08ACD
+D MC78L08ACD, Positive 100mA 30V Linear Regulator, Fixed Output 8V, SO-8
+K Voltage Regulator 100mA Positive
+F http://www.fairchildsemi.com/ds/LM/LM78L05A.pdf
+$ENDCMP
+#
+$CMP MC78L12ACD
+D MC78L12ACD, Positive 100mA 30V Linear Regulator, Fixed Output 12V, SO-8
+K Voltage Regulator 100mA Positive
+F http://www.fairchildsemi.com/ds/LM/LM78L05A.pdf
+$ENDCMP
+#
+$CMP MCP1640T
+D TPS769xx-Q1, Ultra Low Power 100mA Low Drop Out Regulator 1.2...5V, SOT23-5
+K Ultra Low Power Fixed Adjustable LDO 100mA
+F http://www.ti.com/lit/ds/symlink/tps76950-q1.pdf
+$ENDCMP
+#
+$CMP MCP4802-E/SN
+D MCP4921, Single 12-bit Digital to Analog Converter, SPI Interface, SO8
+K Single DAC 1ch 12bit SPI
+F http://ww1.microchip.com/downloads/en/devicedoc/21897a.pdf
+$ENDCMP
+#
+$CMP TC1016
+D Linear Regulator +5V
+K POWER REGUL
+F regulator\lm78xx.pdf
+$ENDCMP
+#
+$CMP TobeDeleted
+D Linear Regulator +5V
+K POWER REGUL
+F regulator\lm78xx.pdf
+$ENDCMP
+#
+$CMP Tobedeleted
+D Linear Regulator +5V
+K POWER REGUL
+F regulator\lm78xx.pdf
+$ENDCMP
+#
+$CMP Tobedeletedagain
+D Linear Regulator +5V
+K POWER REGUL
+F regulator\lm78xx.pdf
+$ENDCMP
+#
+#End Doc Library

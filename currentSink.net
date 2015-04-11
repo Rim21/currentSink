@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/Rim21/Git/currentSink/currentSink.sch)
-    (date "Saturday, 11 April 2015 05:59:31 pm")
+    (date "Saturday, 11 April 2015 06:55:40 pm")
     (tool "Eeschema (2015-04-05 BZR 5577)-product")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -98,6 +98,7 @@
       (tstamp 55229A93))
     (comp (ref P101)
       (value ExtBatt_Power)
+      (footprint Pin_Headers:Pin_Header_Straight_1x02)
       (libsource (lib conn) (part CONN_01X02))
       (sheetpath (names /) (tstamps /))
       (tstamp 5521ED8A))
@@ -109,11 +110,13 @@
       (tstamp 5528D1C9))
     (comp (ref U201)
       (value LMV358)
+      (footprint SMD_Packages:SOIC-8-N)
       (libsource (lib currentSink) (part LMV358))
       (sheetpath (names "/Current Control/") (tstamps /55212F37/))
       (tstamp 5521A12B))
     (comp (ref R202)
       (value .1)
+      (footprint Resistors_ThroughHole:Resistor_Horizontal_RM15mm)
       (fields
         (field (name MPN) AC01000001007JA100))
       (libsource (lib device) (part R))
@@ -121,6 +124,7 @@
       (tstamp 5521A139))
     (comp (ref Q201)
       (value BUK9575)
+      (footprint Transistors_TO-220:TO-220_FET-GDS_Vertical)
       (fields
         (field (name MPN) BUK9575-100A,127))
       (libsource (lib currentSink-cache) (part MOSFET_N))
@@ -156,11 +160,13 @@
       (tstamp 5526E274))
     (comp (ref P201)
       (value TST)
+      (footprint Measurement_Points:Measurement_Point_Round-TH_Small)
       (libsource (lib device) (part TST))
       (sheetpath (names "/Current Control/") (tstamps /55212F37/))
       (tstamp 5528EEEC))
     (comp (ref P202)
       (value TST)
+      (footprint Measurement_Points:Measurement_Point_Round-TH_Small)
       (libsource (lib device) (part TST))
       (sheetpath (names "/Current Control/") (tstamps /55212F37/))
       (tstamp 5528F2F1))
@@ -171,7 +177,11 @@
       (sheetpath (names "/Voltage Control/") (tstamps /5521306C/))
       (tstamp 5521C99B))
     (comp (ref D301)
-      (value DIODE)
+      (value IN4148)
+      (footprint SMD_Packages:SOD-523)
+      (datasheet http://www.diodes.com/datasheets/ds30396.pdf)
+      (fields
+        (field (name MPN) 1N4148WT-7))
       (libsource (lib currentSink-cache) (part DIODE))
       (sheetpath (names "/Voltage Control/") (tstamps /5521306C/))
       (tstamp 5521CA2B))
@@ -197,11 +207,13 @@
       (tstamp 55220BE7))
     (comp (ref P301)
       (value TST)
+      (footprint Measurement_Points:Measurement_Point_Round-TH_Small)
       (libsource (lib device) (part TST))
       (sheetpath (names "/Voltage Control/") (tstamps /5521306C/))
       (tstamp 5528F0BE))
     (comp (ref P302)
       (value TST)
+      (footprint Measurement_Points:Measurement_Point_Round-TH_Small)
       (libsource (lib device) (part TST))
       (sheetpath (names "/Voltage Control/") (tstamps /5521306C/))
       (tstamp 5528F58F))
@@ -243,8 +255,10 @@
       (tstamp 5522881E))
     (comp (ref L401)
       (value 4.7uH)
+      (footprint Resistors_SMD:R_0805_HandSoldering)
+      (datasheet http://www.abracon.com/Magnetics/inductors/AIML-0805HC.pdf)
       (fields
-        (field (name MPN) Value))
+        (field (name MPN) AIML-0805HC-4R7M-T))
       (libsource (lib device) (part INDUCTOR_SMALL))
       (sheetpath (names "/Power Regulation/") (tstamps /55216B3A/))
       (tstamp 55228894))
@@ -282,6 +296,7 @@
       (tstamp 55220147))
     (comp (ref P401)
       (value TST)
+      (footprint Measurement_Points:Measurement_Point_Round-TH_Small)
       (libsource (lib device) (part TST))
       (sheetpath (names "/Power Regulation/") (tstamps /55216B3A/))
       (tstamp 5528ED00))
@@ -307,6 +322,10 @@
       (tstamp 5522A421))
     (comp (ref U601)
       (value ACS711)
+      (footprint SMD_Packages:SOIC-8-N)
+      (datasheet http://www.digikey.com.au/product-search/en?FV=fff4001e%2Cfff801ed%2C401994%2C12040027&k=acs711&mnonly=0&newproducts=0&ColumnSort=0&page=1&stock=1&pbfree=0&rohs=0&quantity=1&ptm=0&fid=0&pageSize=500)
+      (fields
+        (field (name MPN) ACS711KLCTR-12AB-T))
       (libsource (lib currentSink) (part ACS711))
       (sheetpath (names "/Current Read/") (tstamps /5522512A/))
       (tstamp 5522578B))
@@ -333,20 +352,6 @@
       (sheetpath (names "/Current Read/") (tstamps /5522512A/))
       (tstamp 55225FBA)))
   (libparts
-    (libpart (lib device) (part C)
-      (description "Unpolarized capacitor")
-      (footprints
-        (fp C?)
-        (fp C_????_*)
-        (fp C_????)
-        (fp SMD*_c)
-        (fp Capacitor*))
-      (fields
-        (field (name Reference) C)
-        (field (name Value) C))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
     (libpart (lib conn) (part CONN_01X01)
       (footprints
         (fp Pin_Header_Straight_1X01)
@@ -398,6 +403,20 @@
         (pin (num 3) (name P3) (type passive))
         (pin (num 4) (name P4) (type passive))
         (pin (num 5) (name P5) (type passive))))
+    (libpart (lib device) (part C)
+      (description "Unpolarized capacitor")
+      (footprints
+        (fp C?)
+        (fp C_????_*)
+        (fp C_????)
+        (fp SMD*_c)
+        (fp Capacitor*))
+      (fields
+        (field (name Reference) C)
+        (field (name Value) C))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
     (libpart (lib device) (part INDUCTOR_SMALL)
       (fields
         (field (name Reference) L)
@@ -422,6 +441,26 @@
         (field (name Value) TST))
       (pins
         (pin (num 1) (name ~) (type passive))))
+    (libpart (lib currentSink-cache) (part DIODE)
+      (footprints
+        (fp D?)
+        (fp S*))
+      (fields
+        (field (name Reference) D)
+        (field (name Value) DIODE))
+      (pins
+        (pin (num 1) (name A) (type passive))
+        (pin (num 2) (name K) (type passive))))
+    (libpart (lib currentSink-cache) (part MOS_N)
+      (aliases
+        (alias MOSFET_N))
+      (fields
+        (field (name Reference) Q)
+        (field (name Value) MOS_N))
+      (pins
+        (pin (num D) (name D) (type passive))
+        (pin (num G) (name G) (type input))
+        (pin (num S) (name S) (type passive))))
     (libpart (lib currentSink) (part ACS711)
       (description "Linear Regulator +5V")
       (docs regulator\lm78xx.pdf)
@@ -507,36 +546,16 @@
         (pin (num 5) (name ~LDAC~) (type input))
         (pin (num 6) (name VoutB) (type passive))
         (pin (num 7) (name AVSS) (type power_in))
-        (pin (num 8) (name VoutA) (type passive))))
-    (libpart (lib currentSink-cache) (part MOS_N)
-      (aliases
-        (alias MOSFET_N))
-      (fields
-        (field (name Reference) Q)
-        (field (name Value) MOS_N))
-      (pins
-        (pin (num D) (name D) (type passive))
-        (pin (num G) (name G) (type input))
-        (pin (num S) (name S) (type passive))))
-    (libpart (lib currentSink-cache) (part DIODE)
-      (footprints
-        (fp D?)
-        (fp S*))
-      (fields
-        (field (name Reference) D)
-        (field (name Value) DIODE))
-      (pins
-        (pin (num 1) (name A) (type passive))
-        (pin (num 2) (name K) (type passive)))))
+        (pin (num 8) (name VoutA) (type passive)))))
   (libraries
-    (library (logical currentSink)
-      (uri /Users/Rim21/Git/currentSink/currentSink.lib))
-    (library (logical device)
-      (uri "/Library/Application Support/kicad/library/device.lib"))
     (library (logical conn)
       (uri "/Library/Application Support/kicad/library/conn.lib"))
+    (library (logical device)
+      (uri "/Library/Application Support/kicad/library/device.lib"))
     (library (logical currentSink-cache)
-      (uri /Users/Rim21/Git/currentSink/currentSink-cache.lib)))
+      (uri /Users/Rim21/Git/currentSink/currentSink-cache.lib))
+    (library (logical currentSink)
+      (uri /Users/Rim21/Git/currentSink/currentSink.lib)))
   (nets
     (net (code 1) (name 3.3V)
       (node (ref U402) (pin 5))
