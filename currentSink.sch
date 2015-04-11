@@ -260,8 +260,6 @@ F 3 "" H 1300 1400 60  0000 C CNN
 	1    1300 1400
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1450 1450 3850 1450
 $Comp
 L GND #PWR03
 U 1 1 5521EED5
@@ -302,4 +300,6 @@ Wire Wire Line
 	4050 1450 4050 950 
 Wire Wire Line
 	3950 1950 3950 950 
+Wire Wire Line
+	1500 1450 3850 1450
 $EndSCHEMATC

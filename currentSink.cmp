@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2015-04-05 BZR 5577)-product   date = Saturday, 11 April 2015 06:55:27 pm
+Cmp-Mod V01 Created by Cvpcb (2015-04-05 BZR 5577)-product   date = Saturday, 11 April 2015 07:16:46 pm
 
 BeginCmp
 TimeStamp = /55212F37/5521A155;
@@ -284,7 +284,7 @@ BeginCmp
 TimeStamp = /55216D65/55219CB8;
 Reference = U501;
 ValeurCmp = MCP4802-E/SN;
-IdModule  = SO8;
+IdModule  = SMD_Packages:SOIC-8-N;
 EndCmp
 
 BeginCmp
