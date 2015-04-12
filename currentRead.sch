@@ -51,7 +51,7 @@ U 1 1 5522578B
 P 5600 3900
 F 0 "U601" H 5900 3504 60  0000 C CNN
 F 1 "ACS711" H 5600 4050 60  0000 C CNN
-F 2 "SMD_Packages:SOIC-8-N" H 5600 3900 60  0001 C CNN
+F 2 "SOIC-8-N" H 5600 3900 60  0001 C CNN
 F 3 "http://www.digikey.com.au/product-search/en?FV=fff4001e%2Cfff801ed%2C401994%2C12040027&k=acs711&mnonly=0&newproducts=0&ColumnSort=0&page=1&stock=1&pbfree=0&rohs=0&quantity=1&ptm=0&fid=0&pageSize=500" H 5600 3900 60  0001 C CNN
 F 4 "ACS711KLCTR-12AB-T" H 5600 3900 60  0001 C CNN "MPN"
 	1    5600 3900
