@@ -1,8 +1,8 @@
 (export (version D)
   (design
     (source /Users/Rim21/Git/currentSink/currentSink.sch)
-    (date "Saturday, 11 April 2015 07:24:07 pm")
-    (tool "Eeschema (2015-04-05 BZR 5577)-product")
+    (date "Sunday, 12 April 2015 10:28:45 am")
+    (tool "Eeschema (2015-04-09 BZR 5589)-product")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title)
@@ -72,13 +72,13 @@
   (components
     (comp (ref P105)
       (value Load-ve)
-      (footprint Pin_Headers:Pin_Header_Straight_1x01)
+      (footprint Connect:1pin)
       (libsource (lib conn) (part CONN_01X01))
       (sheetpath (names /) (tstamps /))
       (tstamp 5520CA7E))
     (comp (ref P104)
       (value Load+ve)
-      (footprint Pin_Headers:Pin_Header_Straight_1x01)
+      (footprint Connect:1pin)
       (libsource (lib conn) (part CONN_01X01))
       (sheetpath (names /) (tstamps /))
       (tstamp 5520CAE0))
@@ -352,57 +352,6 @@
       (sheetpath (names "/Current Read/") (tstamps /5522512A/))
       (tstamp 55225FBA)))
   (libparts
-    (libpart (lib conn) (part CONN_01X01)
-      (footprints
-        (fp Pin_Header_Straight_1X01)
-        (fp Pin_Header_Angled_1X01)
-        (fp Socket_Strip_Straight_1X01)
-        (fp Socket_Strip_Angled_1X01))
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_01X01))
-      (pins
-        (pin (num 1) (name P1) (type passive))))
-    (libpart (lib conn) (part CONN_01X02)
-      (footprints
-        (fp Pin_Header_Straight_1X02)
-        (fp Pin_Header_Angled_1X02)
-        (fp Socket_Strip_Straight_1X02)
-        (fp Socket_Strip_Angled_1X02))
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_01X02))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))))
-    (libpart (lib conn) (part CONN_01X03)
-      (footprints
-        (fp Pin_Header_Straight_1X03)
-        (fp Pin_Header_Angled_1X03)
-        (fp Socket_Strip_Straight_1X03)
-        (fp Socket_Strip_Angled_1X03))
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_01X03))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))
-        (pin (num 3) (name P3) (type passive))))
-    (libpart (lib conn) (part CONN_01X05)
-      (footprints
-        (fp Pin_Header_Straight_1X05)
-        (fp Pin_Header_Angled_1X05)
-        (fp Socket_Strip_Straight_1X05)
-        (fp Socket_Strip_Angled_1X05))
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_01X05))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))
-        (pin (num 3) (name P3) (type passive))
-        (pin (num 4) (name P4) (type passive))
-        (pin (num 5) (name P5) (type passive))))
     (libpart (lib device) (part C)
       (description "Unpolarized capacitor")
       (footprints
@@ -424,6 +373,12 @@
       (pins
         (pin (num 1) (name 1) (type input))
         (pin (num 2) (name 2) (type input))))
+    (libpart (lib device) (part TST)
+      (fields
+        (field (name Reference) P)
+        (field (name Value) TST))
+      (pins
+        (pin (num 1) (name ~) (type passive))))
     (libpart (lib device) (part R)
       (description Resistor)
       (footprints
@@ -435,22 +390,6 @@
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
-    (libpart (lib device) (part TST)
-      (fields
-        (field (name Reference) P)
-        (field (name Value) TST))
-      (pins
-        (pin (num 1) (name ~) (type passive))))
-    (libpart (lib currentSink-cache) (part DIODE)
-      (footprints
-        (fp D?)
-        (fp S*))
-      (fields
-        (field (name Reference) D)
-        (field (name Value) DIODE))
-      (pins
-        (pin (num 1) (name A) (type passive))
-        (pin (num 2) (name K) (type passive))))
     (libpart (lib currentSink-cache) (part MOS_N)
       (aliases
         (alias MOSFET_N))
@@ -546,16 +485,77 @@
         (pin (num 5) (name ~LDAC~) (type input))
         (pin (num 6) (name VoutB) (type passive))
         (pin (num 7) (name AVSS) (type power_in))
-        (pin (num 8) (name VoutA) (type passive)))))
+        (pin (num 8) (name VoutA) (type passive))))
+    (libpart (lib currentSink-cache) (part DIODE)
+      (footprints
+        (fp D?)
+        (fp S*))
+      (fields
+        (field (name Reference) D)
+        (field (name Value) DIODE))
+      (pins
+        (pin (num 1) (name A) (type passive))
+        (pin (num 2) (name K) (type passive))))
+    (libpart (lib conn) (part CONN_01X01)
+      (footprints
+        (fp Pin_Header_Straight_1X01)
+        (fp Pin_Header_Angled_1X01)
+        (fp Socket_Strip_Straight_1X01)
+        (fp Socket_Strip_Angled_1X01))
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_01X01))
+      (pins
+        (pin (num 1) (name P1) (type passive))))
+    (libpart (lib conn) (part CONN_01X02)
+      (footprints
+        (fp Pin_Header_Straight_1X02)
+        (fp Pin_Header_Angled_1X02)
+        (fp Socket_Strip_Straight_1X02)
+        (fp Socket_Strip_Angled_1X02))
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_01X02))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))))
+    (libpart (lib conn) (part CONN_01X03)
+      (footprints
+        (fp Pin_Header_Straight_1X03)
+        (fp Pin_Header_Angled_1X03)
+        (fp Socket_Strip_Straight_1X03)
+        (fp Socket_Strip_Angled_1X03))
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_01X03))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))
+        (pin (num 3) (name P3) (type passive))))
+    (libpart (lib conn) (part CONN_01X05)
+      (footprints
+        (fp Pin_Header_Straight_1X05)
+        (fp Pin_Header_Angled_1X05)
+        (fp Socket_Strip_Straight_1X05)
+        (fp Socket_Strip_Angled_1X05))
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_01X05))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))
+        (pin (num 3) (name P3) (type passive))
+        (pin (num 4) (name P4) (type passive))
+        (pin (num 5) (name P5) (type passive)))))
   (libraries
-    (library (logical conn)
-      (uri "/Library/Application Support/kicad/library/conn.lib"))
     (library (logical device)
       (uri "/Library/Application Support/kicad/library/device.lib"))
+    (library (logical currentSink)
+      (uri /Users/Rim21/Git/currentSink/currentSink.lib))
     (library (logical currentSink-cache)
       (uri /Users/Rim21/Git/currentSink/currentSink-cache.lib))
-    (library (logical currentSink)
-      (uri /Users/Rim21/Git/currentSink/currentSink.lib)))
+    (library (logical conn)
+      (uri "/Library/Application Support/kicad/library/conn.lib")))
   (nets
     (net (code 1) (name 3.3V)
       (node (ref U402) (pin 5))
