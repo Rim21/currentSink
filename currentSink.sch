@@ -63,7 +63,8 @@ P 9650 1050
 F 0 "P104" H 9650 1150 50  0000 C CNN
 F 1 "Load+ve" V 9750 1050 50  0000 C CNN
 F 2 "Connect:1pin" H 9650 1050 60  0001 C CNN
-F 3 "" H 9650 1050 60  0000 C CNN
+F 3 "http://muellerelectric.com/wp-content/uploads/BU-P2143-0.pdf" H 9650 1050 60  0001 C CNN
+F 4 "BU-P2143-0" H 9650 1050 60  0001 C CNN "MPN"
 	1    9650 1050
 	1    0    0    -1  
 $EndComp
